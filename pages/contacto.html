@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto CODER Infecto</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header id="header">
+      <div>
+        <img
+          class="header__logo"
+          src="../imagenes/logoTH.jpeg"
+          alt="Logo hospital"
+        />
+      </div>
+      <div class="row">
+        <h1 class="header__title-h1">
+          Infectología del Hospital Diego Thompson
+        </h1>
+
+        <h2 class="header__title-h2">
+          Calle xxxx nº 111, San Martín, Pcia. de Buenos Aires
+        </h2>
+      </div>
+    </header>
+
+    <nav id="nav_list">
+      <div>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="equipo.html">Equipo</a></li>
+          <li><a href="academico.html">Académico</a></li>
+          <li><a href="informacionutil.html">Información Útil</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="contact__maps">
+        <h1 class="contact__title-h1">Nuestra ubicación en el mapa:</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1324866153725!2d-58.544514056201415!3d-34.58126622997438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb779c91bc39d%3A0x4be66c3aaf68d7ec!2sHospital%20Municipal%20Dr.%20Diego%20Thompson!5e0!3m2!1ses-419!2sar!4v1665006149804!5m2!1ses-419!2sar"
+          width="100%"
+          height="500rem"
+          frameborder="0"
+          allowfullscreen
+          loading="lazy"
+          scrolling="no"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+      <div class="contact__form">
+        <h1 class="contact__title-h1">Dejanos tu mensaje</h1>
+        <form action="">
+          <fieldset>
+            <legend>Completá los siguientes datos</legend>
+            <label for="nombre">Nombre: </label>
+            <input
+              type="text"
+              name="nombre"
+              id="nombre"
+              placeholder="Poner nombre"
+            />
+            <label for="apellido">Apellido</label>
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Poner apellido"
+            />
+
+            <div>Sexo:</div>
+            <label for="hombre">Hombre</label>
+            <input type="radio" name="hombre" id="hombre" />
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="mujer" id="mujer" />
+            <label for="indefinido">Prefiero no decirlo</label>
+            <input type="radio" name="indefinido" id="indefinido" />
+
+            <div>
+              <label for="mensaje">Mensaje</label>
+            </div>
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="60"
+              rows="10"
+            ></textarea>
+            <div>
+              <input type="submit" value="Enviar" />
+              <input type="reset" value="Limpiar" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+
+    <footer id="footer">
+      <div class="footer__sm">
+        <div class="footer__sm__icons">
+          <div>Buscanos en las redes</div>
+          <!-- iconos sociales -->
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        &copy; Copyright 2022 <a href="#">Infectología Thompson</a> | Creada por
+        Luciano Salaberry
+      </div>
+    </footer>
+  </body>
+</html>

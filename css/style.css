@@ -1,0 +1,291 @@
+/* class es . y id es #*/
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  background-image: url("../imagenes/logoTH.jpeg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 5rem;
+  background-blend-mode: soft-light;
+}
+
+.container {
+  display: grid;
+  /* height: 100vh; /*con esto digo que tiene q ocupar todo el alto de la pantalla, cualquiera sea el dispositivo*/
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto; /*el espacio que me queda libre entre el width y el max-width lo distribuyo en igual proporción a ambos lados*/
+  grid-template-columns: 2.5fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  column-gap: 1rem;
+  /*row-gap: 20px;*/
+  grid-template-areas:
+    "header       header"
+    "nav_list     nav_list"
+    "noticias     aside"
+    "footer       footer";
+}
+
+#header {
+  grid-area: header;
+  background-color: #dd5353;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  top: 0;
+  z-index: 1;
+  padding: 0rem;
+}
+.header__logo {
+  box-sizing: content-box;
+  height: 7rem;
+  display: block;
+}
+.header__title-h1 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+.header__title-h2 {
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 2rem 0px 2rem;
+}
+
+#nav_list {
+  grid-area: nav_list;
+  list-style-type: none;
+  text-align: center;
+  background-color: #b73e3e;
+  position: sticky;
+  top: 0em;
+  z-index: 100;
+}
+#nav_list ul li {
+  display: inline;
+}
+#nav_list ul li a {
+  color: #dbc8ac;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0px 40px 0px 40px;
+  border-style: none;
+}
+#nav_list li a:hover {
+  opacity: 0.65;
+  background-color: aqua;
+  padding: 0px 40px 0px 40px;
+}
+
+#noticias {
+  grid-area: noticias;
+}
+
+#aside {
+  grid-area: aside;
+  background-color: #fbf2cf;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #b73e3e;
+  border-radius: 30px;
+  margin: 15% 10px 15% 10px;
+}
+.aside__table {
+  padding: 0.5rem;
+}
+.aside__table td {
+  padding: 0.5rem;
+}
+
+#footer {
+  grid-area: footer;
+  background-color: #eddbc0;
+  display: flex;
+  flex-direction: column;
+}
+.footer__sm {
+  font-size: 100%;
+  text-align: center;
+  background-color: #2d4263;
+  color: white;
+}
+.footer__sm__icons a {
+  color: white;
+}
+.footer__copyright {
+  background-color: black;
+  color: white;
+  font-size: 2vh;
+  text-align: center;
+}
+.footer__copyright a {
+  color: green;
+  font-weight: bold;
+}
+.footer__copyright a:hover {
+  opacity: 0.65;
+  text-decoration: underline;
+}
+
+.cards__index {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.card__index {
+  display: flex;
+  flex-direction: row;
+  border-color: #b73e3e;
+  border-style: solid;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  margin: 1rem;
+  padding: 0.5rem 0.5rem 0.5em 1rem;
+  background-color: #dbc8ac;
+}
+
+.title-h3__index {
+  display: block;
+  text-align: left;
+  box-sizing: content-box;
+  padding-left: 3px;
+}
+
+.card__image {
+  border-radius: 1rem;
+  max-height: 10em;
+  object-fit: cover;
+}
+
+/*EQUIPO*/
+.equipo__title-h1 {
+  text-align: left;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.cards__equipo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.card__equipo {
+  display: block;
+  text-align: center;
+  border-color: #b73e3e;
+  border-style: solid;
+  border-radius: 30px;
+  border-width: 1px;
+  background-color: #dbc8ac;
+  margin: 50px 50px 50px 50px;
+  padding: 10px 10px 10px 10px;
+}
+
+.card__image__equipo {
+  height: 15em;
+}
+
+/*INFO UTIL*/
+#links-utiles {
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+#telefonos-utiles {
+  padding: 10px;
+  margin: 20px 10px 20px 10px;
+}
+
+.telefonos-emergencias {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.telefonos-emergencias ul {
+  list-style-type: none;
+}
+
+.telefonos__hospitales__table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.telefonos__hospitales__table td {
+  padding: 10px 10px 10px 10px;
+}
+
+/*CONTACTO*/
+
+.contact__maps {
+  width: 100%;
+  display: block;
+}
+
+.contact__form {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: red solid;
+  max-width: fit-content;
+}
+
+.contact__title-h1 {
+  margin-left: 10px;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "nav_list"
+      "aside"
+      "noticias"
+      "footer";
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__title-h2 {
+    display: none;
+  }
+
+  #nav_list ul li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card__index {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .card__description {
+    display: none;
+  }
+}
