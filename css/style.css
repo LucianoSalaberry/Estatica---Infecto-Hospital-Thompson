@@ -72,6 +72,7 @@ body {
 #nav_list {
   grid-area: nav_list;
   list-style-type: none;
+  width: 100%;
   text-align: center;
   background-color: #b73e3e;
   position: sticky;
@@ -99,7 +100,7 @@ body {
   grid-area: noticias;
 }
 
-#aside {
+.aside {
   grid-area: aside;
   background-color: #fbf2cf;
   display: flex;
@@ -159,7 +160,6 @@ body {
   border-width: 1px;
   margin: 1rem;
   padding: 0.5rem 0.5rem 0.5em 1rem;
-  background-color: #dbc8ac;
 }
 
 .title-h3__index {
@@ -178,8 +178,8 @@ body {
 /*EQUIPO*/
 .equipo__title-h1 {
   text-align: left;
-  padding-top: 10px;
-  padding-left: 10px;
+  padding-top: 1rem;
+  padding-left: 1rem;
 }
 
 .cards__equipo {
@@ -194,35 +194,83 @@ body {
   text-align: center;
   border-color: #b73e3e;
   border-style: solid;
-  border-radius: 30px;
+  border-radius: 2rem;
   border-width: 1px;
   background-color: #dbc8ac;
-  margin: 50px 50px 50px 50px;
-  padding: 10px 10px 10px 10px;
+  margin: 3rem;
+  padding: 1rem;
 }
 
 .card__image__equipo {
   height: 15em;
 }
-
+/*ACADEMICO*/
+#body__academico {
+  background-color: transparent;
+  font-family: "poppins", sans-serif;
+  background-image: url("../imagenes/pexels-cdc-3992933.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #dbc8ac;
+  background-size: cover;
+  background-blend-mode: normal;
+}
 /*INFO UTIL*/
 #links-utiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 10px;
-  margin: 20px 10px 20px 10px;
+  margin: 2rem 1rem 2rem 1rem;
+}
+#links-utiles img {
+  height: 5em;
+  width: auto;
+  border-radius: 0.5rem;
 }
 
 #telefonos-utiles {
-  padding: 10px;
-  margin: 20px 10px 20px 10px;
+  padding: 1rem;
+  margin: 2rem 1rem 2rem 1rem;
 }
 
 .telefonos-emergencias {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 1rem;
 }
 
-.telefonos-emergencias ul {
-  list-style-type: none;
+.tarjeta-telefono {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8.5rem;
+  border: 1px solid #b73e3e;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: beige;
+}
+
+.card__image__telefono {
+  width: 3rem;
+}
+
+.h3__tarjeta__telefono {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.p {
+  font-weight: bold;
 }
 
 .telefonos__hospitales__table {
@@ -265,14 +313,16 @@ body {
       "aside"
       "noticias"
       "footer";
+    justify-items: center;
   }
 
   .header__logo {
     display: none;
   }
-
+  .header__title-h1,
   .header__title-h2 {
-    display: none;
+    font-size: large;
+    font-weight: lighter;
   }
 
   #nav_list ul li {
@@ -287,5 +337,12 @@ body {
 
   .card__description {
     display: none;
+  }
+
+  .card__index,
+  .aside {
+    width: fit-content;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
