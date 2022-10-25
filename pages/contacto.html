@@ -23,7 +23,7 @@
     ></script>
   </head>
 
-  <body>
+  <body class="container-contact">
     <header id="header">
       <div>
         <img
@@ -51,61 +51,63 @@
       </div>
     </nav>
 
-    <div class="row">
-      <div class="contact__maps">
-        <h3 class="title-h3">Nuestra ubicación en el mapa:</h3>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1324866153725!2d-58.544514056201415!3d-34.58126622997438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb779c91bc39d%3A0x4be66c3aaf68d7ec!2sHospital%20Municipal%20Dr.%20Diego%20Thompson!5e0!3m2!1ses-419!2sar!4v1665006149804!5m2!1ses-419!2sar"
-          width="100%"
-          height="500rem"
-          frameborder="0"
-          allowfullscreen
-          loading="lazy"
-          scrolling="no"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
-      <div class="contact__form">
-        <h3 class="title-h3">Dejanos tu mensaje</h3>
-        <form action="/action_page.php">
-          <label for="fname">Nombre</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Tu nombre.."
-          />
+    <div class="direction">
+      <h3>Infectología Hospital Thompson</h3>
+      <h4>Matheu 4460 (entrada por guardia), (B1650CSZ) San Martín</h4>
+      <h4>Buenos Aires, Argentina</h4>
+      <h4>(011) 4830-0687/0684/0550/0660</h4>
+      <h4>WhatsApp: 11 3606-2132</h4>
+    </div>
+    <div class="contact__maps">
+      <h3 class="title-h3">Nuestra ubicación en el mapa:</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1324866153725!2d-58.544514056201415!3d-34.58126622997438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb779c91bc39d%3A0x4be66c3aaf68d7ec!2sHospital%20Municipal%20Dr.%20Diego%20Thompson!5e0!3m2!1ses-419!2sar!4v1665006149804!5m2!1ses-419!2sar"
+        width="100%"
+        height="300rem"
+        frameborder="0"
+        allowfullscreen
+        loading="lazy"
+        scrolling="no"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
+    </div>
 
-          <label for="lname">Apellido</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Tu apellido.."
-          />
-
-          <label for="gender">Sexo</label>
-          <select id="gender" name="gender">
-            <option value="male">Hombre</option>
-            <option value="female">Mujer</option>
-            <option value="notbinary">No binario</option>
-            <option value="not">Prefiero no decirlo</option>
-          </select>
-
-          <label for="subject">Asunto</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Escribe tu mensaje/ consulta, tené en cuenta que no se hacen diagnósticos por mensaje.."
-            style="height: 200px"
-            style="width: auto"
-          ></textarea>
-
-          <input type="submit" value="Enviar" />
-          <input type="reset" value="Limpiar" />
-        </form>
-      </div>
+    <div class="contact__form">
+      <h3 class="title-h3">Dejanos tu mensaje</h3>
+      <form action="/action_page.php">
+        <label for="fname">Nombre</label>
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Tu nombre.."
+        />
+        <label for="lname">Apellido</label>
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Tu apellido.."
+        />
+        <label for="gender">Sexo</label>
+        <select id="gender" name="gender">
+          <option value="male">Hombre</option>
+          <option value="female">Mujer</option>
+          <option value="notbinary">No binario</option>
+          <option value="not">Prefiero no decirlo</option>
+        </select>
+        <label for="subject">Asunto</label>
+        <textarea
+          id="subject"
+          name="subject"
+          placeholder="Escribe tu mensaje/ consulta, tené en cuenta que no se hacen diagnósticos por mensaje.."
+          style="height: 200px"
+          style="width: auto"
+        ></textarea>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+      </form>
     </div>
 
     <footer id="footer">
