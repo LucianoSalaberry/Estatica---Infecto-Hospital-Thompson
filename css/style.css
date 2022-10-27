@@ -150,20 +150,6 @@ body {
 .card__image__equipo {
   height: 15em;
 }
-/*ACADEMICO*/
-#body__academico {
-  background-color: transparent;
-  font-family: "poppins", sans-serif;
-  background-image: url("../imagenes/pexels-cdc-3992933.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  /*background-color: #dbc8ac;*/
-  /*background-size:cover;*/
-  background-color: white;
-  background-size: contain;
-  background-blend-mode: normal;
-}
 
 #links-utiles {
   display: flex;
@@ -292,7 +278,7 @@ input[type="reset"] {
     align-content: center;
   }
 
-  .row {
+  .rows {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -309,7 +295,7 @@ input[type="reset"] {
     padding: 0px 20px 0px 20px;
   }
 
-  .container {
+  .containers {
     display: grid;
     width: 100%;
     max-width: 1024px;
@@ -414,7 +400,7 @@ input[type="reset"] {
 
 /*Media query 2*/
 @media screen and (min-width: 1024px) {
-  .container {
+  .containers {
     display: grid;
     max-width: 1366px;
     grid-template-columns: 2.5fr 1fr;

@@ -1,89 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Proyecto CODER Infecto</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coder - InfectoTH - Academico</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <script
-      src="https://kit.fontawesome.com/cc9250f829.js"
-      crossorigin="anonymous"
-    ></script>
+    <!--<link rel="stylesheet" href="/css/style.css" />-->
   </head>
 
-  <body id="body__academico">
-    <header id="header">
-      <div>
-        <img
-          class="header__logo"
-          src="../imagenes/logoTH.jpeg"
-          alt="Logo hospital"
-        />
-      </div>
-      <div class="row">
-        <h1 class="title-h1">Infectología del Hospital Diego Thompson</h1>
+  <body>
+    <div class="d-flex align-items-center align-content-center">
+      <img
+        class="d-none d-sm-flex flex-row img-fluid"
+        src="/imagenes/logoTHresized.jpg"
+        alt="logo"
+        width="100px"
+      />
 
-        <h2 class="title-h2">Matheu 4460, San Martín, Pcia. de Buenos Aires</h2>
-      </div>
-    </header>
-
-    <nav id="nav_list">
-      <div>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="equipo.html">Equipo</a></li>
-          <li><a href="academico.html">Académico</a></li>
-          <li><a href="informacionutil.html">Información Útil</a></li>
-          <li><a href="contacto.html">Ubicación y Contacto</a></li>
-        </ul>
+      <h2 class="d-block text-center px-5 w-100">
+        Infectología del Hospital Diego Thompson
+      </h2>
+    </div>
+    <nav
+      class="navbar navbar-expand-sm bg-danger p-2 text-dark bg-opacity-75 navbar-dark sticky-top"
+    >
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pages/academico.html"
+                >Académico</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/informacionutil.html"
+                >Información Util</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <main>
-      <section id="repositorio">
-        <h2 class="title-h2">Repositorio</h2>
-        <div class="academico-links">
-          <h3 class="title-h3">
-            Para ingresar a los siguientes links debe estar registrado
-          </h3>
-          <ul>
-            <li><a href="">Guías</a></li>
-            <li><a href="">Ateneos</a></li>
-            <li><a href="">Clases</a></li>
-            <li><a href="">Bibliografía</a></li>
-            <li><a href="">Trabajos presentados</a></li>
-            <li><a href="">Congresos y jornadas</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
+    <section class="row d-flex justify-content-center align-items-center">
+      <h2 class="text-black p-5 rounded">Repositorio de documentación</h2>
+      <p class="text-black px-5 py-1">
+        *Acceso restringido a personal autorizado por Infectologia del Hospital.
+        Pongase en contacto para recibir su nombre de usuario/clave y tener
+        acceso.
+      </p>
+    </section>
 
-    <footer id="footer">
-      <div class="footer__sm">
-        <div class="footer__sm__icons">
-          <div>Buscanos en las redes</div>
-          <!-- iconos sociales -->
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+    <section class="container">
+      <div class="row mt-5 text-center justify-content-center">
+        <!--mt es margin top-->
+        <div class="col-12 col-sm-3 col-lg-2 px-1 my-5">
+          <!--cada tarjeta ocupa 3 columas para pantallas de 576px para arriba, entonces caben 4 tarjetas en la fila// para pantalla de 768px para arriba cada tarjeta ocupa 2 columnas, entonces caben 6 en la fila-->
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Guias</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-2 px-1 my-5">
+          <!--px es el padding a izq y der; py es arr y abajo-->
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Ateneos</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 px-1 my-5">
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Bibliografía</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-2 px-1 my-5">
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Cursos</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-lg-2 px-1 my-5">
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Clases</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-lg-2 px-1 my-5">
+          <div class="card h-100 text-bg-light">
+            <div class="card-body">
+              <h5 class="card-title">Trabajos presentados</h5>
+              <a href="#" class="btn btn-primary mt-5">Entrar</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__copyright">
-        &copy; Copyright 2022 <a href="#">Infectología Thompson</a> | Creada por
-        Luciano Salaberry
+    </section>
+
+    <footer class="footer pt-1 bg-primary">
+      <div class="footer-sm d-flex text-bg-white text-center">
+        <div class="container">
+          <div class="row py-1 text-center text-bg-white">
+            <div class="col-lg-5 col-md-6">Buscanos en las redes</div>
+            <div class="col-lg-7 col-md-6">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom py-1">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copy">
+                &copy; Copyright 2022 <a href="#">Infectología Thompson</a> |
+                Creada por Luciano Salaberry
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
