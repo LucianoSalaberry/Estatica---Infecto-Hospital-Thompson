@@ -83,15 +83,18 @@
       </div>
     </nav>
 
-    <div class="direction">
-      <h3>Infectología Hospital Thompson</h3>
-      <h4>Matheu 4460 (entrada por guardia), (B1650CSZ) San Martín</h4>
-      <h4>Buenos Aires, Argentina</h4>
-      <h4>(011) 4830-0687/0684/0550/0660</h4>
-      <h4>WhatsApp: 11 3606-2132</h4>
+    <div class="mt-4 mx-5 p-1 bg-primary text-white rounded m-auto">
+      <p class="fs-3 mb-0">Infectología Hospital Thompson</p>
+      <p class="fs-4 mb-0">
+        Matheu 4460 (entrada por guardia), (B1650CSZ) San Martín
+      </p>
+      <p class="fs-4 mb-0">Buenos Aires, Argentina</p>
+      <p class="fs-5 mb-0">(011) 4830-0687/0684/0550/0660</p>
+      <p class="fs-5 mb-0">WhatsApp: 11 3606-2132</p>
     </div>
-    <div class="contact__maps">
-      <h3 class="title-h3">Nuestra ubicación en el mapa:</h3>
+
+    <div class="w-100 d-block">
+      <h2 class="text-center mt-5">Nuestra ubicación en el mapa!</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1324866153725!2d-58.544514056201415!3d-34.58126622997438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb779c91bc39d%3A0x4be66c3aaf68d7ec!2sHospital%20Municipal%20Dr.%20Diego%20Thompson!5e0!3m2!1ses-419!2sar!4v1665006149804!5m2!1ses-419!2sar"
         width="100%"
@@ -105,9 +108,64 @@
       </iframe>
     </div>
 
-    <div class="contact__form">
-      <h3 class="title-h3">Dejanos tu mensaje</h3>
-      <form action="/action_page.php">
+    <div class="contact__form mt-5 mb-5 col-sm-12 col-lg-4 m-auto">
+      <h2 class="text-center mt-2 mb-5">Dejanos tu mensaje</h2>
+      <div class="row mb-1">
+        <div class="col mb-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombre"
+            aria-label="Nombre"
+          />
+        </div>
+        <div class="col mb-2">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Apellido"
+            aria-label="Apellido"
+          />
+        </div>
+        <div class="form-floating mb-2">
+          <select
+            class="form-select"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected>Prefiero no contestar</option>
+            <option value="1">Hombre</option>
+            <option value="2">Mujer</option>
+            <option value="3">No binarie</option>
+          </select>
+          <label for="floatingSelect">Elija del listado</label>
+        </div>
+        <div class="form-floating mb-2">
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2"
+            >Escribe tu mensaje/ consulta, tené en cuenta que no se hacen
+            diagnósticos por mensaje..</label
+          >
+        </div>
+        <div>
+          <input
+            class="btn btn-primary btn-success"
+            type="submit"
+            value="Enviar"
+          />
+          <input
+            class="btn btn-primary btn-danger"
+            type="reset"
+            value="Reset"
+          />
+        </div>
+      </div>
+      <!--<form action="/action_page.php">
         <label for="fname">Nombre</label>
         <input
           type="text"
@@ -139,7 +197,7 @@
         ></textarea>
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar" />
-      </form>
+      </form>-->
     </div>
 
     <footer class="bg-primary text-center text-white">
