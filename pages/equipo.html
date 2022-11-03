@@ -30,98 +30,121 @@
     ></script>
   </head>
 
-  <body id="body__equipo">
-    <header id="header">
-      <div>
-        <img
-          class="header__logo"
-          src="../imagenes/logoTH.jpeg"
-          alt="Logo hospital"
-        />
-      </div>
-      <div class="rows">
-        <h1 class="title-h1">Infectología del Hospital Diego Thompson</h1>
+  <body>
+    <div class="d-flex align-items-center align-content-center">
+      <img
+        class="d-none d-sm-flex flex-row img-fluid"
+        src="../imagenes/logoTHresized.jpg"
+        alt="logo"
+        width="100px"
+      />
 
-        <!--<h2 class="title-h2">Matheu 4460, San Martín, Pcia. de Buenos Aires</h2>-->
-      </div>
-    </header>
-
-    <nav id="nav_list">
-      <div>
-        <ul>
-          <li><a href="../index.html">Inicio</a></li>
-          <li><a href="equipo.html">Equipo</a></li>
-          <li><a href="academico.html">Académico</a></li>
-          <li><a href="informacionutil.html">Información Útil</a></li>
-          <li><a href="contacto.html">Ubicación y Contacto</a></li>
-        </ul>
+      <h1 class="d-block text-center px-5 w-100">
+        Infectología del Hospital Diego Thompson
+      </h1>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+      <div class="container-fluid d-flex flex-column">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/pages/equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/academico.html">Académico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/informacionutil.html"
+                >Información Util</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <main>
-      <h1 class="title-h2">Conocé a nuestro equipo médico</h1>
-
-      <section class="cards__equipo">
-        <div class="card__equipo">
-          <h3 class="title-h3">Dra. Lorena Abum</h3>
-          <img
-            class="card__image__equipo"
-            src="../imagenes/doctor.png"
-            alt="foto Dra Lorena"
-          />
-          <p class="card__description__equipo">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            ut, corrupti explicabo ea, aliquam, quisquam ullam fuga cum a
-            laboriosam facilis repudiandae placeat vitae nihil officiis
-            exercitationem temporibus asperiores corporis!
-          </p>
+      <h2 class="text-center mt-5">Conocé a nuestro equipo médico</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-5 m-3">
+        <div class="col">
+          <div class="card h-100 py-2">
+            <img src="/imagenes/doctor.png" class="img-fluid w-50 h-auto m-auto" alt="doctor">
+            <div class="card-body">
+              <h5 class="card-title">Dra. Lorena Abu</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur atque repudiandae molestias id iusto repellat!</p>
+            </div>
+          </div>
         </div>
-
-        <div class="card__equipo">
-          <h3 class="title-h3">Dra M. Ayelén Far</h3>
-          <img
-            class="card__image__equipo"
-            src="../imagenes/doctor.png"
-            alt="foto Dra Ayelen"
-          />
-          <p class="card__description__equipo">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod neque
-            nam magni asperiores repellat consequatur incidunt pariatur. Iste
-            est optio consectetur natus, incidunt quas sit modi. Accusantium
-            soluta perspiciatis nam!
-          </p>
+        <div class="col">
+          <div class="card h-100 py-2">
+            <img src="/imagenes/doctor.png" class="card-img-top w-50 h-auto m-auto" alt="doctor">
+            <div class="card-body">
+              <h5 class="card-title">Dra. Ayelén Far</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut sed dolore accusamus laboriosam odit ea similique animi deserunt expedita!</p>
+            </div>
+          </div>
         </div>
-
-        <div class="card__equipo">
-          <h3 class="title-h3">Dra Paola Koz</h3>
-          <img
-            class="card__image__equipo"
-            src="../imagenes/doctor.png"
-            alt="foto Dra Paola"
-          />
-          <p class="card__description__equipo">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod neque
-            nam magni asperiores repellat consequatur incidunt pariatur. Iste
-            est optio consectetur natus, incidunt quas sit modi. Accusantium
-            soluta perspiciatis nam!
-          </p>
+        <div class="col">
+          <div class="card h-100 py-2">
+            <img src="/imagenes/doctor.png" class="card-img-top w-50 h-auto m-auto" alt="doctor">
+            <div class="card-body">
+              <h5 class="card-title">Dra. Paola Koz</h5>
+              <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam, maiores?</p>
+            </div>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <footer id="footer">
-      <div class="footer__sm">
-        <div class="footer__sm__icons">
-          <div>Buscanos en las redes</div>
-          <!-- iconos sociales -->
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+        <div class="col">
+          <div class="card h-100 py-2">
+            <img src="/imagenes/nurse.png" class="card-img-top w-50 h-auto m-auto" alt="enfermera">
+            <div class="card-body">
+              <h5 class="card-title">Dra. Maite</h5>
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro fugiat dolore numquam, vitae debitis tenetur cum quae officiis sint, neque voluptatum quas, eos molestias ea!</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__copyright">
-        &copy; Copyright 2022 <a href="#">Infectología Thompson</a> | Creada por
-        Luciano Salaberry
+    <footer class="bg-primary text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-0">
+        <!-- Section: Social media -->
+        <section class="mb-0">
+          <div class="text-center p-0">Seguinos por Instagram</div>
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-0"
+            style="background-color: #2670ac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Grid container -->
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright: Creada por
+        <a class="text-white" href="https://github.com/LucianoSalaberry">
+          Luciano Salaberry</a
+        >
       </div>
     </footer>
     <script

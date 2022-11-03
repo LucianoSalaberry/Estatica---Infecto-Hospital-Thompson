@@ -16,22 +16,6 @@ body {
   background-size: 5rem;
   background-blend-mode: soft-light;
 }
-#header {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  position: relative;
-  top: 0;
-  z-index: 1;
-  height: 100px;
-}
-.header__logo {
-  display: none;
-}
 
 .title-h1,
 .title-h2,
@@ -42,67 +26,6 @@ body {
   width: 100%;
 }
 
-#nav_list {
-  list-style-type: none;
-  width: 100%;
-  text-align: center;
-  background-color: #b73e3e;
-  position: sticky;
-  top: 0em;
-  z-index: 100;
-}
-#nav_list ul {
-  margin-bottom: 0;
-  padding: 0;
-}
-#nav_list ul li {
-  display: flex;
-  flex-direction: column;
-}
-#nav_list ul li a {
-  color: #dbc8ac;
-  font-weight: lighter;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0px 40px 0px 40px;
-  border-style: none;
-}
-#nav_list li a:hover {
-  opacity: 0.65;
-  background-color: aqua;
-  padding: 0px 40px 0px 40px;
-}
-.aside {
-  display: flex;
-  flex-direction: column;
-}
-.aside__index {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  max-width: 100%;
-  margin-top: 1em;
-}
-.texto-encima {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2rem;
-  font-weight: bolder;
-}
-.card__index {
-  display: flex;
-  flex-direction: column;
-  border-color: #b73e3e;
-  border-style: solid;
-  border-radius: 1.5rem;
-  border-width: 1px;
-  margin: 1rem;
-  padding: 0.5rem;
-  max-width: 100%;
-  /*margin-top: 1em;*/
-}
 .card__index {
   transition-property: all;
   transition-duration: 1s;
@@ -113,60 +36,6 @@ body {
 .card__index:hover {
   width: 100%;
   background-color: aqua;
-}
-
-.card__image,
-.aside__image {
-  max-width: 100%;
-  object-fit: cover;
-  border-radius: 1rem;
-}
-.card__description {
-  display: none;
-}
-#footer {
-  background-color: #eddbc0;
-  display: flex;
-  flex-direction: column;
-}
-.footer__sm {
-  font-size: 100%;
-  text-align: center;
-  background-color: #2d4263;
-  color: white;
-}
-.footer__sm__icons a {
-  color: white;
-}
-.footer__copyright {
-  background-color: black;
-  color: white;
-  font-size: 2vh;
-  text-align: center;
-}
-.footer__copyright a {
-  color: green;
-  font-weight: bold;
-}
-.footer__copyright a:hover {
-  opacity: 0.65;
-  text-decoration: underline;
-}
-
-.card__equipo {
-  display: block;
-  text-align: center;
-  border-color: #b73e3e;
-  border-style: solid;
-  border-radius: 2rem;
-  border-width: 1px;
-  background-color: #dbc8ac;
-  margin: 1rem;
-  padding: 1rem;
-}
-
-.card__image__equipo {
-  height: 15em;
 }
 
 #links-utiles {
@@ -293,78 +162,11 @@ input[type="reset"] {
 /*Media query 1*/
 
 @media screen and (min-width: 768px) {
-  .header__logo {
-    box-sizing: border-box;
-    height: 7em;
-    display: flex;
-    align-items: center;
-    align-content: center;
-  }
-
   .rows {
     display: flex;
     flex-direction: column;
     width: 100%;
     padding: 0px 2px 0px 2px;
-  }
-
-  #nav_list ul li {
-    display: inline;
-  }
-  #nav_list ul li a {
-    padding: 0px 20px 0px 20px;
-  }
-  #nav_list li a:hover {
-    padding: 0px 20px 0px 20px;
-  }
-
-  .containers {
-    display: grid;
-    width: 100%;
-    max-width: 1024px;
-    margin: 0 auto;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: auto auto auto auto auto;
-    column-gap: 1rem;
-    grid-template-areas:
-      "header       header     header"
-      "nav_list     nav_list   nav_list"
-      "aside        aside      aside"
-      "noticias     noticias   noticias"
-      "footer       footer     footer";
-  }
-  #header {
-    grid-area: header;
-  }
-  #nav_list {
-    grid-area: nav_list;
-  }
-  #noticias {
-    grid-area: noticias;
-  }
-  .aside {
-    grid-area: aside;
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-  }
-  #footer {
-    grid-area: footer;
-  }
-  .cards__index {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-  }
-  .card__index {
-    display: flex;
-    flex-direction: row;
-  }
-  .card__image {
-    max-height: 10em;
-  }
-  .card__description {
-    display: block;
   }
 
   .container-contact {
@@ -423,21 +225,6 @@ input[type="reset"] {
 
 /*Media query 2*/
 @media screen and (min-width: 1024px) {
-  .containers {
-    display: grid;
-    max-width: 1366px;
-    grid-template-columns: 2.5fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      "header       header"
-      "nav_list     nav_list"
-      "noticias     aside"
-      "footer       footer";
-  }
-
-  .aside {
-    flex-direction: column;
-  }
   .contact__form form textarea,
   .contact__form form input,
   .contact__form form #gender {

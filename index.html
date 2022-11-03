@@ -29,140 +29,197 @@
     <title>Proyecto CODER Infecto</title>
   </head>
 
-  <body class="containers">
-    <header id="header">
-      <div>
-        <img
-          class="header__logo"
-          src="imagenes/logoTH.jpeg"
-          alt="Logo hospital"
-        />
-      </div>
-      <div class="rows">
-        <h1 class="title-h1">Infectología del Hospital Diego Thompson</h1>
-        <!--<h2 class="title-h2">Matheu 4460, San Martín, Pcia. de Buenos Aires</h2>-->
-      </div>
-    </header>
+  <body>
+    <div class="d-flex align-items-center align-content-center">
+      <img
+        class="d-none d-sm-flex flex-row img-fluid"
+        src="../imagenes/logoTHresized.jpg"
+        alt="logo"
+        width="100px"
+      />
 
-    <nav id="nav_list">
-      <div>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="pages/equipo.html">Equipo</a></li>
-          <li><a href="pages/academico.html">Académico</a></li>
-          <li><a href="pages/informacionutil.html">Información Útil</a></li>
-          <li><a href="pages/contacto.html">Ubicación y Contacto</a></li>
-        </ul>
+      <h1 class="d-block text-center px-5 w-100">
+        Infectología del Hospital Diego Thompson
+      </h1>
+    </div>
+    <nav class="navbar navbar-expand-sm bg-danger navbar-dark sticky-top">
+      <div class="container-fluid d-flex flex-column">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/equipo.html">Equipo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/academico.html">Académico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/informacionutil.html"
+                >Información Util</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
-
-    <aside class="aside">
-      <div class="aside__index">
-        <a
-          href="https://www.argentina.gob.ar/educacion/esi#:~:text=El%20Programa%20Nacional%20de%20Educaci%C3%B3n,todos%20los%20niveles%20y%20modalidades."
-          target="_blank"
-        >
-          <img
-            class="aside__image"
-            src="imagenes/preservativos_montoncito_rec.jpg"
-            alt="fotoPreservativos"
-          />
-          <div class="texto-encima">Educación Sexual Integral</div></a
-        >
-      </div>
-
-      <div class="aside__index">
-        <a
-          href="https://www.huesped.org.ar/informacion/poblacion-trans/"
-          target="_blank"
-        >
-          <img
-            class="aside__image"
-            src="imagenes/trans_rec.jpg"
-            alt="fotoTrans"
-          />
-          <div class="texto-encima">Población Trans</div></a
-        >
-      </div>
-
-      <div class="aside__index">
-        <a href="https://www.argentina.gob.ar/salud/vacunas" target="_blank">
-          <img
-            class="aside__image"
-            src="imagenes/vacuna_horizontal_rec.jpg"
-            alt="fotoVacuna"
-          />
-          <div class="texto-encima">Vacunas</div></a
-        >
-      </div>
-    </aside>
-
-    <main id="noticias">
-      <section class="cards__index">
-        <div class="card__index">
-          <img
-            class="card__image"
-            src="imagenes/cintaVIH_rec.jpg"
-            alt="cinta cintaVIH"
-          />
-          <div class="rows">
-            <h3 class="title-h3">HIV</h3>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              ut, corrupti explicabo ea, aliquam, quisquam ullam fuga cum a
-              laboriosam facilis repudiandae placeat vitae nihil officiis
-              exercitationem temporibus asperiores corporis!
-            </p>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col12 col-lg-8 col-md-8 col-xd-12">
+          <div class="card m-3" style="max-width: 700px">
+            <div class="row g-0 my-1">
+              <div class="col-md-4">
+                <img
+                  src="imagenes/cintaVIH_rec_rez.jpg"
+                  class="img-fluid rounded"
+                  alt="cintaVIH"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">HIV</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3" style="max-width: 700px">
+            <div class="row g-0 my-1">
+              <div class="col-md-4">
+                <img
+                  src="imagenes/monkeypox_rez.jpg"
+                  class="img-fluid d-block rounded"
+                  alt="monkeypox"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Viruela del mono</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card m-3" style="max-width: 700px">
+            <div class="row g-0 my-1">
+              <div class="col-md-4">
+                <img
+                  src="imagenes/mosquito_rec.jpg"
+                  class="img-fluid rounded"
+                  alt="fotoMosquito"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Dengue, zica y Chikungunya</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card__index">
-          <img
-            class="card__image"
-            src="imagenes/monkeypox.jpg"
-            alt="fotoMonkeypox"
-          />
-          <div class="rows">
-            <h3 class="title-h3">Viruela del mono - Monkeypox-</h3>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              ut, corrupti explicabo ea, aliquam, quisquam ullam fuga cum a
-              laboriosam facilis repudiandae placeat vitae nihil officiis
-              exercitationem temporibus asperiores corporis!
-            </p>
+        <div class="col12 col-lg-4 col-md-4 col-xd-12">
+          <div class="card text-bg-dark m-auto" style="max-width: 80%">
+            <a
+              href="https://www.argentina.gob.ar/educacion/esi#:~:text=El%20Programa%20Nacional%20de%20Educaci%C3%B3n,todos%20los%20niveles%20y%20modalidades."
+              target="_blank"
+            >
+              <img
+                src="imagenes/preservativos_montoncito_rec.jpg"
+                class="card-img"
+                alt="fotoPreservativos"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">Educación sexual integral</h5>
+              </div></a
+            >
           </div>
-        </div>
-        <div class="card__index">
-          <img
-            class="card__image"
-            src="imagenes/mosquito_rec.jpg"
-            alt="fotoMosquito"
-          />
-          <div class="rows">
-            <h3 class="title-h3">Dengue, Zica y Chikungunya</h3>
-            <p class="card__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-              ut, corrupti explicabo ea, aliquam, quisquam ullam fuga cum a
-              laboriosam facilis repudiandae placeat vitae nihil officiis
-              exercitationem temporibus asperiores corporis!
-            </p>
+          <div class="card text-bg-dark m-auto" style="max-width: 80%">
+            <a
+              href="https://www.huesped.org.ar/informacion/poblacion-trans/"
+              target="_blank"
+            >
+              <img
+                src="imagenes/trans_rec.jpg"
+                class="card-img"
+                alt="fotoTrans"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">LGBTQ</h5>
+              </div></a
+            >
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer id="footer">
-      <div class="footer__sm">
-        <div class="footer__sm__icons">
-          <div>Buscanos en las redes</div>
-          <!-- iconos sociales -->
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <div class="card text-bg-dark m-auto" style="max-width: 80%">
+            <a
+              href="https://www.argentina.gob.ar/salud/vacunas"
+              target="_blank"
+            >
+              <img
+                src="imagenes/vacuna_horizontal_rec.jpg"
+                class="card-img"
+                alt="fotoVacuna"
+              />
+              <div class="card-img-overlay">
+                <h5 class="card-title">LGBTQ</h5>
+              </div></a
+            >
+          </div>
         </div>
       </div>
-      <div class="footer__copyright">
-        &copy; Copyright 2022 <a href="#">Infectología Thompson</a> | Creada por
-        Luciano Salaberry
+    </div>
+
+    <footer class="bg-primary text-center text-white">
+      <!-- Grid container -->
+      <div class="container p-0">
+        <!-- Section: Social media -->
+        <section class="mb-0">
+          <div class="text-center p-0">Seguinos por Instagram</div>
+          <!-- Instagram -->
+          <a
+            class="btn btn-primary btn-floating m-0"
+            style="background-color: #2670ac"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </section>
+      </div>
+      <!-- Grid container -->
+
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright: Creada por
+        <a class="text-white" href="https://github.com/LucianoSalaberry">
+          Luciano Salaberry</a
+        >
       </div>
     </footer>
     <script
