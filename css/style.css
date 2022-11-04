@@ -17,31 +17,11 @@ body {
   background-blend-mode: soft-light;
 }
 
-#links-utiles {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex: 1;
-  margin-top: 1rem;
-}
-#links-utiles img {
-  border-radius: 0.5rem;
-  height: auto;
-  width: auto;
-  max-height: 250px;
-  max-width: 250px;
-  border-color: #b73e3e;
-  border-style: solid;
-  margin: 10px;
-}
-
 #telefonos-utiles {
   padding: 1rem;
   margin: 2rem 1rem 2rem 1rem;
 }
-
+/*
 .telefonos-emergencias {
   display: flex;
   flex-direction: row;
@@ -63,12 +43,7 @@ body {
   padding: 0.5rem;
   background-color: beige;
 }
-#links-utiles {
-  -webkit-animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: tilt-in-fwd-tr 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 1s;
-}
+
 .card__image__telefono {
   width: 3rem;
 }
@@ -81,38 +56,16 @@ body {
   font-weight: bold;
   font-size: small;
 }
-
+*/
 .telefonos__hospitales {
   max-width: 700px;
 }
 
-/*CONTACTO*/
+.emergencias {
+  width: 8rem;
+}
 
-/*.contact__form,
-form {
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  border: white solid;
-}
-input[type="submit"],
-input[type="reset"] {
-  background-color: #04aa6d;
-  color: white;
-  width: auto;
-  margin: 6px;
-  padding: 6px 6px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-input[type="reset"] {
-  background-color: #b73e3e;
-}
+/*CONTACTO*/
 
 /*Media query 1*/
 
@@ -134,12 +87,3 @@ input[type="reset"] {
     width: fit-content;
   }
 }
-
-/*Media query 2
-@media screen and (min-width: 1024px) {
-  .contact__form form textarea,
-  .contact__form form input,
-  .contact__form form #gender {
-    width: 600px;
-  }
-}*/
