@@ -5,9 +5,13 @@
   box-sizing: border-box;
 }
 
+$header-font: "Lobster";
+$body-font: "poppins", sans-serif;
+$hover-color: darksalmon;
+
 body {
   background-color: whitesmoke;
-  font-family: "poppins", sans-serif;
+  font-family: $body-font;
   background-image: url("../imagenes/logoTH.jpeg");
   background-attachment: fixed;
   background-repeat: repeat;
@@ -16,7 +20,7 @@ body {
 }
 
 .header {
-  font-family: "Lobster";
+  font-family: $header-font;
   background-color: white;
 }
 
@@ -26,13 +30,15 @@ body {
 
 .card-index-hor {
   max-width: 800px;
-}
-.card-index-hor a {
-  text-decoration: none;
-  color: black;
-}
-.card-index-hor a :hover {
-  background-color: darksalmon;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    :hover {
+      background-color: $hover-color;
+    }
+  }
 }
 
 .card-index-ver {
@@ -44,7 +50,6 @@ body {
   opacity: 0;
   transition: opacity 0.5s;
 }
-
 :hover {
   opacity: 1;
 }
@@ -58,12 +63,13 @@ body {
   height: 8rem;
 }
 
-.tel-emergencias a {
-  text-decoration: none;
-  color: black;
-}
-.tel-emergencias a :hover {
-  background-color: darksalmon;
-}
+.tel-emergencias {
+  a {
+    text-decoration: none;
+    color: black;
 
-/*# sourceMappingURL=style.css.map */
+    :hover {
+      background-color: $hover-color;
+    }
+  }
+}

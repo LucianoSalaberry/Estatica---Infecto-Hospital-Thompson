@@ -14,10 +14,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -32,7 +28,7 @@
   </head>
 
   <body>
-    <div class="d-flex align-items-center align-content-center">
+    <div class="d-flex align-items-center align-content-center header">
       <img
         class="d-none d-sm-flex flex-row img-fluid"
         src="../imagenes/logoTHresized.jpg"
@@ -135,100 +131,116 @@
       <h2 class="text-center mt-5">Teléfonos de emergencias</h2>
       <div class="container-fluid text-center">
         <div class="row">
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:100">100</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/firefighter.png"
-                alt="firefighter"
-              />
-              <p class="fs-6">Bomberos</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:100">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">100</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/firefighter.png"
+                  alt="firefighter"
+                />
+                <p class="fs-6">Bomberos</p>
+              </div></a
+            >
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:102">102</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/protect.png"
-                alt="protect"
-              />
-              <p class="fs-6">Niñez y Adolescencia</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:102">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">102</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/protect.png"
+                  alt="protect"
+                />
+                <p class="fs-6">Niñez y Adolescencia</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:103">103</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/alert.png"
-                alt="alert"
-              />
-              <p class="fs-6">Defensa Civil</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:103">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">103</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/alert.png"
+                  alt="alert"
+                />
+                <p class="fs-6">Defensa Civil</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:107">107</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/ambulance.png"
-                alt="ambulance"
-              />
-              <p class="fs-6">SAME</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:107">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">107</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/ambulance.png"
+                  alt="ambulance"
+                />
+                <p class="fs-6">SAME</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:139">139</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/old-man.png"
-                alt="old-man"
-              />
-              <p class="fs-6">PAMI Urgencias</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:139">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">139</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/old-man.png"
+                  alt="old-man"
+                />
+                <p class="fs-6">PAMI Urgencias</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:144">144</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/police-officer.png"
-                alt="police-officer"
-              />
-              <p class="fs-6">Violencia de género</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:144">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">144</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/police-officer.png"
+                  alt="police-officer"
+                />
+                <p class="fs-6">Violencia de género</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:147">147</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/city-council.png"
-                alt="city-council"
-              />
-              <p class="fs-6">Municipalidad</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:147">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">147</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/city-council.png"
+                  alt="city-council"
+                />
+                <p class="fs-6">Municipalidad</p>
+              </div>
+            </a>
           </div>
 
-          <div class="col-sm-6 col-md-3 col-lg-2">
-            <div class="card m-auto emergencias">
-              <p class="fs-5"><a href="tel:911">911</a></p>
-              <img
-                class="img-fluid w-25 m-auto"
-                src="../imagenes/policeman.png"
-                alt="policeman"
-              />
-              <p class="fs-6">Policia</p>
-            </div>
+          <div class="col-6 col-md-3 col-lg-2 col-xl-1 m-auto tel-emergencias">
+            <a href="tel:911">
+              <div class="card mx-auto my-1 emergencias">
+                <p class="fs-5">911</p>
+                <img
+                  class="img-fluid w-25 m-auto"
+                  src="../imagenes/policeman.png"
+                  alt="policeman"
+                />
+                <p class="fs-6">Policia</p>
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -237,8 +249,10 @@
       <div class="container.fluid m-auto telefonos__hospitales">
         <div class="alert alert-success" role="alert">
           <div class="row">
-            <div class="col-8 col-sm-7">Hospital Municipal Diego Thompson</div>
-            <div class="col-4 col-sm-5">4830-0687/0684/0550/0660</div>
+            <div class="col-8 col-sm-7">
+              Hospital Municipal Dr. Diego Thompson
+            </div>
+            <div class="col-4 col-sm-5">4830-0687 /0684 /0550 /0660</div>
           </div>
         </div>
         <div class="alert alert-success" role="alert">
@@ -260,13 +274,13 @@
             <div class="col-8 col-sm-7">
               Hospital Zonal Gral. Manuel Belgrano
             </div>
-            <div class="col-4 col-sm-5">4724-3000/3001</div>
+            <div class="col-4 col-sm-5">4724-3000 /3001</div>
           </div>
         </div>
         <div class="alert alert-success" role="alert">
           <div class="row">
             <div class="col-8 col-sm-7">Policlínico Eva Perón (ex Castex)</div>
-            <div class="col-4 col-sm-5">4830-0687/0684/0550/0660</div>
+            <div class="col-4 col-sm-5">4724-3022 /3024</div>
           </div>
         </div>
         <div class="alert alert-success" role="alert">
@@ -286,14 +300,14 @@
           <a
             class="btn btn-primary btn-floating m-0"
             style="background-color: #2670ac"
-            href="#!"
+            href="http://www.instagram.com/infectologiathompson"
             role="button"
             ><i class="fab fa-instagram"></i
           ></a>
         </section>
       </div>
 
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+      <div class="text-center p-3 copyright">
         © 2022 Copyright: Creada por
         <a class="text-white" href="https://github.com/LucianoSalaberry">
           Luciano Salaberry</a
