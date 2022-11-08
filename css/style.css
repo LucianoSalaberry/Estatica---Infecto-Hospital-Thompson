@@ -5,22 +5,12 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: whitesmoke;
-  font-family: "poppins", sans-serif;
-  background-image: url("../imagenes/logoTH.jpeg");
-  background-attachment: fixed;
-  background-repeat: repeat;
-  background-size: 5rem;
-  background-blend-mode: soft-light;
-}
-
 .header {
   font-family: "Lobster";
   background-color: white;
 }
 
-.copyright {
+.footer__copyright {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -64,6 +54,16 @@ body {
 }
 .tel-emergencias a :hover {
   background-color: darksalmon;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: "poppins", sans-serif;
+  background-image: url("../imagenes/logoTH.jpeg");
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 5rem;
+  background-blend-mode: soft-light;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,45 @@
+.card-index-hor {
+  max-width: 800px;
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    :hover {
+      background-color: $hover-color;
+    }
+  }
+}
+
+.card-index-ver {
+  max-width: 80%;
+}
+
+.card-img-overlay {
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+:hover {
+  opacity: 1;
+}
+
+.telefonos__hospitales {
+  max-width: 700px;
+}
+
+.emergencias {
+  width: 8rem;
+  height: 8rem;
+}
+
+.tel-emergencias {
+  a {
+    text-decoration: none;
+    color: black;
+
+    :hover {
+      background-color: $hover-color;
+    }
+  }
+}
