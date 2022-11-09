@@ -1,6 +1,9 @@
 .header {
   font-family: $header-font;
-  background-color: white;
+  /*background-color: white;*/
+  background-image: url("../imagenes/pexels-antoni-shkraba-6749773.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .footer__copyright {
