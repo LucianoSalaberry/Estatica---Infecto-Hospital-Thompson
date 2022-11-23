@@ -87,18 +87,18 @@
         </div>
       </div>
     </nav>
-
-    <div class="mt-4 mx-auto p-1 bg-primary text-white rounded">
-      <p class="fs-3 mb-0 fw-semibold">Infectología Hospital Thompson</p>
-      <p class="fs-4 mb-0">
-        Matheu 4460 (ingreso por guardia), B1650CSZ - San Martín
-      </p>
-      <p class="fs-4 mb-0">Buenos Aires, Argentina</p>
-      <p class="fs-5 mb-0">sanmartinthompson@gmail.com</p>
-      <p class="fs-5 mb-0">WhatsApp: 11 3606-2132</p>
+    <div class="container-fluid">
+      <div class="mt-4 mx-auto p-1 bg-primary text-white rounded text-center">
+        <p class="fs-3 mb-0 fw-semibold">Infectología Hospital Thompson</p>
+        <p class="fs-4 mb-0">
+          Matheu 4460 (ingreso por guardia), B1650CSZ - San Martín
+        </p>
+        <p class="fs-4 mb-0">Buenos Aires, Argentina</p>
+        <p class="fs-5 mb-0 text-wrap">sanmartinthompson@gmail.com</p>
+        <p class="fs-5 mb-0">WhatsApp: 11 3606-2132</p>
+      </div>
     </div>
-
-    <div class="w-100 d-block">
+    <div class="container-fluid d-block">
       <h2 class="text-center mt-5">Nuestra ubicación en el mapa!</h2>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1381.1324866153725!2d-58.544514056201415!3d-34.58126622997438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb779c91bc39d%3A0x4be66c3aaf68d7ec!2sHospital%20Municipal%20Dr.%20Diego%20Thompson!5e0!3m2!1ses-419!2sar!4v1665006149804!5m2!1ses-419!2sar"
@@ -114,10 +114,10 @@
     </div>
 
     <div
-      class="contact__form mt-5 mb-5 col12 col-lg-4 col-md-4 col-xd-12 m-auto"
+      class="contact__form container-fluid mt-5 mb-5 col12 col-lg-6 col-md-4 col-xd-12"
     >
       <h2 class="text-center mt-2 mb-5">Dejanos tu mensaje</h2>
-      <div class="row mb-1">
+      <div class="row">
         <div class="col mb-2">
           <input
             type="text"
@@ -132,6 +132,15 @@
             class="form-control"
             placeholder="Apellido"
             aria-label="Apellido"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="exampleFormControlInput1" class="form-label"></label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="tu email"
           />
         </div>
         <div class="form-floating mb-2">
@@ -154,9 +163,8 @@
             id="floatingTextarea2"
             style="height: 100px"
           ></textarea>
-          <label for="floatingTextarea2"
-            >Escribe tu mensaje/ consulta, tené en cuenta que no se hacen
-            diagnósticos por mensaje..</label
+          <label for="floatingTextarea2 text-wrap">
+            Escribe tu mensaje, no se hacen diagnósticos por este medio"</label
           >
         </div>
         <div>
