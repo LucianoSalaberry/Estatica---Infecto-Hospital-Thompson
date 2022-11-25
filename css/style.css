@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat:wght@500&family=Poppins:wght@200&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +6,7 @@
 }
 
 .header {
-  font-family: "Lobster";
+  font-family: "Montserrat";
   background-image: url("../imagenes/pexels-antoni-shkraba-6749773.jpg");
   background-position: center;
   background-size: cover;
