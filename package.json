@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LucianoSalaberry/Infectolog-a-Thompson.git"
+    "url": "git+https://github.com/LucianoSalaberry/PF-SALABERRY.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/LucianoSalaberry/Infectolog-a-Thompson/issues"
+    "url": "https://github.com/LucianoSalaberry/PF-SALABERRY/issues"
   },
-  "homepage": "https://github.com/LucianoSalaberry/Infectolog-a-Thompson#readme"
+  "homepage": "https://github.com/LucianoSalaberry/PF-SALABERRY#readme"
 }
