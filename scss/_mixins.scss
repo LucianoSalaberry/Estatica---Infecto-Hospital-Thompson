@@ -1,0 +1,32 @@
+/*PALETA DE COLORES*/
+@mixin paleta($background, $letra) {
+  background-color: $background;
+  color: $letra;
+}
+
+.footer__copyright {
+  @include paleta(#a0b6f5, black);
+}
+.footer__seguinos {
+  @include paleta(#cddeff, black);
+}
+.linkGitHub {
+  @include paleta(transparent, red);
+}
+.boton__insta {
+  @include paleta(#676fa3, white);
+}
+.boton__entrar {
+  @include paleta(#676fa3, white);
+}
+.barra__nav {
+  @include paleta(#dd3e3e, white);
+}
+
+.header {
+  @include paleta(transparent, default);
+} /*.header no cumple ninguna función en este caso, pero lo dejo por si necesito a futuro*/
+
+.tarjeta__contacto {
+  @include paleta(#676fa3, white);
+}
